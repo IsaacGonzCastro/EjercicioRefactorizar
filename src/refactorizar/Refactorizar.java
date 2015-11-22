@@ -11,9 +11,8 @@ public class Refactorizar {
         int numeroDigitos = 0;
         int numerodigitos = 0;
         numeroDigitos = 4;
-        if (numeroDigitos <= 0) {
-            System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
-        }
+       
+        IntroducirDigitos(numeroDigitos);
         for (int i = 1; i <= 99999; i++) {
             int divisionEntera = i;
 
@@ -59,6 +58,12 @@ public class Refactorizar {
                     System.out.println(i);
                 }
             }
+        }
+    }
+
+    public static void IntroducirDigitos(int numeroDigitos) {
+        if (numeroDigitos <= 0) {
+            System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
     }
 
